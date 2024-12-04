@@ -1,13 +1,12 @@
-import Form from '../Form/Form';
+import TodoForm from '../TodoForm/TodoForm';
 import TodoList from '../TodoList/TodoList';
-import './BasicExample.css';
 
 const BasicExample: React.FC = () => {
   return (
-    <div className="basic-example">
-      <article className="todo-form">
-        <Form />
-      </article>
+    <div className="todo-app">
+      <section className="todo-form-section">
+        <TodoForm />
+      </section>
       <TodoList />
     </div>
   );
