@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
+# React Query Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React.js application built with Vite and focuses on practicing TanStack React Query features like query, mutation, optimistic updates, pagination, infinite queries, and prefetching. The project demonstrates several React Query features using various components that showcase real-world examples.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Basic Example of Query and Mutation
 
-## Expanding the ESLint configuration
+A simple example demonstrating the usage of useQuery and useMutation hooks.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### Paginated Queries
 
-- Configure the top-level `parserOptions` property like this:
+A practical example of how to handle paginated data using React Query's useQuery and usePagination features.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+#### Query Example Using useQueries
+
+An example showing how to use the useQueries hook to fetch multiple queries concurrently.
+
+#### Infinite Query Example Using useInfiniteQuery
+
+Demonstrates how to fetch and display data incrementally using the useInfiniteQuery hook.
+
+#### Optimistic Updates Example
+
+Shows how to perform optimistic updates in the UI, allowing for faster feedback when performing mutations.
+
+#### Prefetching Before Query Example
+
+Demonstrates how to prefetch data before the query is triggered to optimize the user experience.
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+### Installation
+
+1. Clone the repository:
+
+```
+https://github.com/MOHI-UDDIN-AKBAR/react-query-playbook.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navigate to the project directory:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+ cd react-quary
+```
+
+3. Install dependencies:
+
+```
+npm install
+```
+
+### Development
+
+To start the development server, run the following command:
+
+```
+npm run dev
+```
+
+This will start the development server and open the app in your browser at `http://localhost:5173.`
+
+## Contributions
+
+Feel free to fork the project and submit a pull request for improvements or bug fixes. 😊
